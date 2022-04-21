@@ -92,15 +92,8 @@ const links = [
     text: "Tutorial",
     url: "https://www.gatsbyjs.com/docs/tutorial/",
     description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
+      "Setting up your first Gatsby site.",
     color: "#E95800",
-  },
-  {
-    text: "How to Guides",
-    url: "https://www.gatsbyjs.com/docs/how-to/",
-    description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
   },
  
 ]
@@ -121,7 +114,7 @@ const IndexPage = () => {
      
      <img style={imageStyle} src="https://images.unsplash.com/photo-1650477790032-3141e6a8e98c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"/>
       <ul style={listStyles}>
-        <h1> SOME USEFUL LINKS FOR GATSBY</h1>
+        <h1>GATSBY TUTORIAL</h1>
         {links.map(link => (
           <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
             <span>
@@ -147,7 +140,7 @@ const IndexPage = () => {
           >
             MY WESITE 
             <span style={badgeStyle} aria-label="New Badge">
-              Contact me here!
+              NIKKI SALEHI
             </span>
           </a>
         </li>
