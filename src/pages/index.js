@@ -1,7 +1,15 @@
 import * as React from "react"
 
 // styles
+const imageStyle = {
+  height: 300,
+  border: 'solid',
+  borderWeight:2,
+  borderColor: "#663399",
+  borderRadius: 10,
+}
 const pageStyles = {
+  backgroundColor: '#ccc8db',
   color: "#232129",
   padding: 96,
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
@@ -94,35 +102,7 @@ const links = [
       "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
     color: "#1099A8",
   },
-  {
-    text: "Reference Guides",
-    url: "https://www.gatsbyjs.com/docs/reference/",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-    color: "#BC027F",
-  },
-  {
-    text: "Conceptual Guides",
-    url: "https://www.gatsbyjs.com/docs/conceptual/",
-    description:
-      "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
-    color: "#0D96F2",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-    color: "#8EB814",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    badge: true,
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-    color: "#663399",
-  },
+ 
 ]
 
 // markup
@@ -131,29 +111,17 @@ const IndexPage = () => {
     <main style={pageStyles}>
       <title>Home Page</title>
       <h1 style={headingStyles}>
-        Congratulations
+        HELLO
         <br />
-        <span style={headingAccentStyles}>— you just made a Gatsby site! </span>
+        <span style={headingAccentStyles}>WELCOME TO MY GATSBY TEST SITE </span>
         <span role="img" aria-label="Party popper emojis">
-          🎉🎉🎉
+          🎉
         </span>
       </h1>
-      <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
-        update in real-time.{" "}
-        <span role="img" aria-label="Sunglasses smiley emoji">
-          😎
-        </span>
-      </p>
+     
+     <img style={imageStyle} src="https://images.unsplash.com/photo-1650477790032-3141e6a8e98c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"/>
       <ul style={listStyles}>
-        <li style={docLinkStyle}>
-          <a
-            style={linkStyle}
-            href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-          >
-            {docLink.text}
-          </a>
-        </li>
+        <h1> SOME USEFUL LINKS FOR GATSBY</h1>
         {links.map(link => (
           <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
             <span>
@@ -172,6 +140,17 @@ const IndexPage = () => {
             </span>
           </li>
         ))}
+        <li>
+          <a
+            style={linkStyle}
+            href='http://nikkisalehi.com/'
+          >
+            MY WESITE 
+            <span style={badgeStyle} aria-label="New Badge">
+              Contact me here!
+            </span>
+          </a>
+        </li>
       </ul>
       <img
         alt="Gatsby G Logo"
