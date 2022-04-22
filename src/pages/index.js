@@ -2,7 +2,7 @@ import * as React from "react"
 
 // styles
 const imageStyle = {
-  height: 300,
+  height: 150,
   border: 'solid',
   borderWeight:2,
   borderColor: "#663399",
@@ -114,7 +114,7 @@ const IndexPage = () => {
      
      <img style={imageStyle} src="https://images.unsplash.com/photo-1650477790032-3141e6a8e98c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"/>
       <ul style={listStyles}>
-        <h1>GATSBY TUTORIAL</h1>
+      
         {links.map(link => (
           <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
             <span>
